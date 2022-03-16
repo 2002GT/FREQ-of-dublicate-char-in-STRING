@@ -1,0 +1,44 @@
+//  --------------------------DUBLICATE CHARACTER IN STRING--------------
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{        
+    
+    //  -------FREQUENCY ARRAY------------
+    
+       int freq[26];
+        for(int i =0; i<26; i++)
+        freq[i] = 0;
+        
+        
+    // -------STRING INPUT-------------------
+    
+        string str ;
+        getline(cin, str);
+        
+    // --------LOOP FOR MAPPING A CHAR TO AN INDEX OF ARRAY BTW 0 25---------
+    
+        for(int i = 0;    i < str.size(); i++)
+        {
+           freq[str[i] - 97]++;
+        }
+        
+    //   ---------CHECKING THE COUNT OF CHAR----------
+        
+         for(int i=0; i<26; i++){
+             if(freq[i] >= 2)
+             
+            //  (i+97) = char to int
+             cout<<(char)(i+97)<<" =" <<freq[i];
+         }
+    
+
+    return 0;
+}
+
+
+    
+
