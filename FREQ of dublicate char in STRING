@@ -28,12 +28,16 @@ int main()
         
     //   ---------CHECKING THE COUNT OF CHAR----------
         
-         for(int i=0; i<26; i++){
+         for(int i=0; i<26; i++)
+         {
              if(freq[i] >= 2)
              
             //  (i+97) = char to int
+            
              cout<<(char)(i+97)<<" =" <<freq[i];
+             
          }
+    
     
 
     return 0;
